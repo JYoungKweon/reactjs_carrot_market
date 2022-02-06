@@ -2,9 +2,9 @@ import type { NextPage } from "next";
 
 const Home: NextPage = () => {
   return (
-    <div className="bg-slate-400 py-20 px-20 grid gap-10 min-h-screen">
+    <div className="bg-slate-400 py-20 px-20 grid gap-10 min-h-screen md:grid-cols-2 xl:grid-cols-3 xl:place-content-center">
       {/* Example No.1 */}
-      <div className="bg-white p-6 rounded-3xl shadow-xl">
+      <div className="flex flex-col justify-between bg-white sm:bg-red-300 md:bg-teal-400 lg:bg-indigo-400 xl:bg-yellow-300 2xl:bg-pink-200 p-6 rounded-3xl shadow-xl">
         <span className="font-semibold text-3xl">Select Item</span>
         <ul>
           {[1, 2, 3, 4, 5].map((i) => (
@@ -31,8 +31,8 @@ const Home: NextPage = () => {
         </button>
       </div>
       {/* Example No.2 */}
-      <div className="group bg-white overflow-hidden rounded-3xl shadow-xl">
-        <div className="bg-blue-500 p-6 pb-14">
+      <div className=" group bg-white overflow-hidden rounded-3xl shadow-xl">
+        <div className="bg-blue-500 p-6 pb-14 xl:pb-10">
           <span className="text-white text-2xl">Profile</span>
         </div>
         <div className="rounded-3xl p-6 relative -top-5 bg-white">
@@ -57,7 +57,7 @@ const Home: NextPage = () => {
         </div>
       </div>
       {/* Example No.3 */}
-      <div className="bg-white p-6 rounded-3xl shadow-xl">
+      <div className="bg-white p-6 rounded-3xl shadow-xl lg:col-span-2 xl:col-span-1">
         <div className="flex mb-5 justify-between items-center">
           <span>⬅</span>
           <div className="space-x-3">
@@ -94,6 +94,7 @@ const Home: NextPage = () => {
         </div>
       </div>
       {/* Example No.4 _ form*/}
+      {/*
       <form className="flex flex-col space-y-2  p-5 ">
         <input
           type="text"
@@ -121,7 +122,8 @@ const Home: NextPage = () => {
             김치
           </span>
         </details>
-        {/* Example No.5 _ file selector, ul*/}}
+         Example No.5 _ file selector, ul
+        
         <div>
           <ul className="list-decimal marker:text-teal-400">
             <li>hi</li>
@@ -138,7 +140,7 @@ const Home: NextPage = () => {
             </p>
           </div>
         </div>
-      </div>
+      </div>*/}
     </div>
   );
 };
