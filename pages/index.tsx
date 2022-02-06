@@ -4,15 +4,14 @@ const Home: NextPage = () => {
   return (
     <div className="bg-slate-400 py-20 px-20 grid gap-10 min-h-screen md:grid-cols-2 xl:grid-cols-3 xl:place-content-center">
       {/* Example No.1 */}
-      <div className="flex flex-col justify-between bg-white sm:bg-red-300 md:bg-teal-400 lg:bg-indigo-400 xl:bg-yellow-300 2xl:bg-pink-200 p-6 rounded-3xl shadow-xl">
+      <div className="flex flex-col justify-between bg-white dark:bg-black dark:text-white sm:bg-red-300 md:bg-teal-400 lg:bg-indigo-400 xl:bg-yellow-300 2xl:bg-pink-200 p-6 rounded-3xl shadow-xl">
         <span className="font-semibold text-3xl">Select Item</span>
         <ul>
           {[1, 2, 3, 4, 5].map((i) => (
-            <div
-              key={i}
-              className="flex justify-between even:bg-yellow-50 odd:bg-blue-50"
-            >
-              <span className="text-gray-500 my-1 ">Grey Chair</span>
+            <div key={i} className="dark:text-white-800 flex justify-between">
+              <span className="text-gray-500 dark:text-white-800 my-1 ">
+                Grey Chair
+              </span>
               <span className="font-semibold">$19</span>
             </div>
           ))}
@@ -22,7 +21,7 @@ const Home: NextPage = () => {
           <span className="font-semibold">$99</span>
         </div>
         <button
-          className="block mt-5 bg-blue-500 text-white p-3 
+          className="block mt-5  bg-blue-500 text-white p-3 dark:bg-black dark:border-white dark:border-2
         text-center rounded-xl w-2/4 mx-auto 
         hover:bg-teal-500 hover:text-black active:bg-yellow-500
         "
